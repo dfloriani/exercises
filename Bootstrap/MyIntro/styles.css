@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav"
+        "main main main"
+        "second second second"
+        "hr hr hr"
+        "third third third"
+        "footer footer footer";
+}
+
+.third
+{
+    grid-area: third;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 3rem 0;
+    gap: 10px;
+}
+
+hr {
+    grid-area: hr;
+    width: 4%;
+    border: dotted blueviolet 6px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin: 0 auto;
+}
+
+body > .container > * {
+    padding: 1rem;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #352F44;
+    color: #B9B4C7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Playfair Display", serif;
+}
+ul {
+    display: flex;
+    align-items: center;
+    /* justify-content: end;  */
+}
+li {
+    padding-right: 3rem;
+}
+nav li {
+    list-style-type: none;
+}
+nav a {
+    color:darkorange;
+}
+nav a:visited {
+    color: #B9B4C7;
+}
+main {
+    grid-area: main;
+    background-image: url("purple.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color:aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+footer {
+    grid-area: footer;
+    background-color: #352F44;
+    color: #B9B4C7;
+    font-family: "Playfair Display", serif;
+    height: 50px;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: "Pinyon Script", cursive;
+}
+
+.second {
+    font-family: "Playfair Display", serif;
+    grid-area: second;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    gap: 1rem;
+}
+
+.second img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+p {
+    width: 30%;
+    margin: auto;
+}
+
+button {
+    text-transform: uppercase;
+    background-color: blueviolet;
+    color: #B9B4C7;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10%;
+}
