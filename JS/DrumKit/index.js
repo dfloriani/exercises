@@ -1,4 +1,4 @@
-let buttons = document.querySelectorAll("button.drum");
+let buttons = document.querySelectorAll("button[data-drum='true']");
 let audio;
 
 for (let i = 0; i < buttons.length; i++) {
