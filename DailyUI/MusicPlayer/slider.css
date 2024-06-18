@@ -1,0 +1,20 @@
+.slider {
+    width: 100%;
+    height: 10px;
+    margin: 0 2%;
+    appearance: none; /* removes browser-specific styling */
+    background: grey ; /* orange background */
+    outline: none; /* remove outline */
+    border-radius: 12px; /* round corners */
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none; /* removes browser-specific styling */
+    width: 20px; /* handle width */
+    height: 20px; /* handle height */
+    border-radius: 50%; /* make it circular */
+    background: #FFFFFF; /* white color */
+    cursor: pointer; /* cursor on hover */
+  }
+
+  

@@ -1,0 +1,84 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: "Play", sans-serif;
+    color: white;
+    height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin: 20px auto;
+    padding: 40px 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.screen {
+    border-radius: 8px;
+    max-width: 80%;
+    height: auto;
+    background-color: black;
+    margin: 0 auto;
+    overflow: hidden;
+    background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
+}
+
+.screen .cover {
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 5%;
+}
+
+.info {
+    text-align: center;
+}
+
+.info p {
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.info span {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.time {
+    margin: 15% 5%;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.player {
+    display: flex;
+    justify-content: space-between;
+    margin: 15% 5%;
+}
+
+@media screen and (max-width: 500px) {
+    .info p {
+        font-size: 1rem;
+    }
+    .info span {
+        font-size: 0.8rem;
+    }
+}

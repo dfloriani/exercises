@@ -1,0 +1,124 @@
+body {
+    height: 100vh;
+    background-color: #F7DED0;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px; 
+    margin: 10% auto;
+    position: relative; /* Make container the positioning context */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.label {
+    text-transform: uppercase;
+    color: #E2BFB3;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.info {
+    text-transform: uppercase;
+}
+
+.imgdiv {
+    background-color: #FEECE2;
+}
+
+.card-form {
+    position: absolute; /* Position the card-form absolutely */
+    top: 0px; /* Adjust as needed */
+    right: 0px; /* Adjust as needed */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    width: 300px;
+}
+
+.card-header {
+    background-color: #FEECE2;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+.card-footer {
+    background-color: #E2BFB3;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 11px;
+}
+
+input {
+    border: transparent;
+    margin-bottom:15px;
+    border-bottom: 1px solid #E2BFB3;
+    padding-top: 5px;
+}
+
+.card-body label {
+    margin-bottom: 5px;
+}
+
+.card-body select {
+    padding: 5px;
+    border: 1px solid #E2BFB3;
+    background-color: #FEECE2;
+    margin-bottom: 15px;
+}
+
+label {
+    display: flex;
+    align-items: center; /* Aligns items vertically centered *//
+}
+
+.icon {
+    margin-left: 5px; /* Optional: Add a small margin to the left of the icon */
+    height: 15px; /* Ensure the height matches your HTML or adjust as needed */
+}
+
+img {
+    margin-left: 15%;
+}
+
+@media (max-width: 690px) {
+    img {
+        margin-left: 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-form {
+        position: relative;
+    }
+    footer {
+        margin-bottom: 30px;
+    }
+    header {
+        text-align: center;
+    }
+    .imgdiv {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+  }

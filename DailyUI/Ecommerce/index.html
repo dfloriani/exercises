@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap"
+      rel="stylesheet"
+    />
+    <title>Metal glasses</title>
+  </head>
+  <body>
+    <header>
+      <div class="left-side">
+        <div class="logo-toggle">
+          <img src="metal.png" alt="metal" class="logo" />
+          <button class="menu-toggle"><img src="./menu.svg" alt="menu"/></button>
+       </div>
+        <div class="menu-wrapper">
+          <div class="nav-wrapper">
+            <ul>
+              <li>Glasses</li>
+              <li>Sunglasses</li>
+              <li>New styles</li>
+            </ul>
+          </div>
+          <div class="right-side">
+            <div class="search">
+                <img src="./search.svg" alt="search" /><input placeholder="Search" minlength="3" maxlength="30" required autocomplete="off"/>
+            </div>
+            <img src="./bag.svg" alt="bag" />
+          </div>
+        </div>
+    </div>
+    </header>
+    <main>
+        <img src="./simone2.jpg" alt="simone" />
+        <div class="buy">
+            <div class="info">
+                <h1>Omega</h1>
+                <span>SUNGLASSES</span>
+                <h2>$345</h2>
+                <p>Nice vintage style to your face with this Omega sunglasses. Classic touch with modern shapes, you will enjoy wearing this pair of glasses. Available in 2 colors.</p>
+            </div>
+            <div class="options">
+                <div class="sizes">
+                    <span>Size:</span>
+                    <span class="size">S</span>
+                    <span class="size">M</span>
+                    <span class="size">L</span>
+                </div>
+                    <div class="colors">
+                        <span>Color</span>
+                        <span class="color black"></span>
+                        <span class="color gradient"></span>
+                    </div>
+            </div>
+            <button>ADD TO CART</button>
+            </div>
+        </div>
+    </main>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle'); // Added querySelector for menu toggle button
+        const navWrapper = document.querySelector('.menu-wrapper'); // Added querySelector for nav-wrapper
+        
+        menuToggle.addEventListener('click', function () { // Added event listener for click event
+          navWrapper.style.display = navWrapper.style.display === 'flex' ? 'none' : 'flex'; // Toggle display property
+        });
+      });
+    </script>
+  </body>
+</html>

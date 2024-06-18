@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="slider.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen">
+        <img class="cover" src="./thp.jpeg" />
+        <div class="header">
+          <img src="./add.svg" alt="add" />
+          <div class="info">
+            <p>Beyond the Matrix</p>
+            <span>Epica</span>
+          </div>
+          <img src="./devices.svg" alt="devices" />
+        </div>
+        <div class="time">
+            <span>2:31</span>
+            <input type="range" min="0" max="100" value="50" class="slider" id="range2">
+            <span>4:36</span>
+        </div>
+        <div class="player">
+            <img src="shuffle.svg" alt="shuffle" class="active"/>
+            <img src="rewind.svg" alt="rewind" height="30px"/>
+            <img src="pause.svg" alt="pause" height="30px"/>
+            <img src="next.svg" alt="next" height="30px"/>
+            <img src="more.svg" alt="more"/>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

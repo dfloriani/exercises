@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+    width: 100vh;
+    padding: 5% 5%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+.background {
+    background-color: #E3E1D9;
+    width: 100%;
+    padding: 2% 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+main {
+    background-image: url(./epica.jpg);
+    height: 40vh;
+    width: 100%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+.but-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+h1 {
+    font-family: "Teko", sans-serif;
+    margin: 0;
+}
+
+.info2 {
+    margin: 0 10%;
+}
+
+.info2 p {
+    margin: 0;
+    font-size: 1rem;
+    text-align: start;
+}
+
+.info button {
+    align-self: center;
+    padding: 7px;
+    border: 1px solid chocolate;
+    border-radius: 8px;
+    background-color: #E3E1D9;
+    color: chocolate;
+}
+
+.info2 a {
+    font-size: 0.875rem;
+    color:chocolate;
+}
+
+.topsongs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+}
+
+.topsongs-header a {
+    font-size: 12px;
+}
+
+.topsongs-item {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.square1 {
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    margin: 0 50px;
+    margin-right: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.numbers {
+    margin-left: auto; /* Push the numbers span to the end of the flex container */
+    font-size: 14px; /* Ensure consistent font size */
+    margin-right: 50px;
+}
+
+@media screen and (min-width: 1024px){
+    .container {
+        overflow: scroll;
+    }
+}

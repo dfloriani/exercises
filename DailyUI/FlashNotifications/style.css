@@ -1,0 +1,82 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fcfcfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+
+.container {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flash {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.success-body {
+    height: 85%;
+    width: 100%;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    margin-top: 15%;
+}
+
+.fail-body {
+    height: 85%;
+    width: 100%;
+    background: linear-gradient(109.7deg, rgb(202, 50, 50) 5.7%, rgb(252, 195, 12) 92.4%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p.message {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.text {
+    font-size: 1.5rem;
+    margin: 5% 0;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        align-items:center;
+        gap: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 360px) {
+    .flash {
+        width: 200px;
+        height: 250px;
+    }
+    
+}

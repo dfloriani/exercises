@@ -1,0 +1,282 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #c6cfdf;
+  font-family: "Nanum Gothic Coding", monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #c6cfdf;
+}
+
+.logo {
+  height: 100px;
+  border-radius: 50%;
+}
+
+header {
+  background-color: #2e2e3b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+}
+
+.left-side {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.right-side {
+  display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+ul {
+  display: flex;
+    gap: 20px;
+}
+
+/* .left-side,
+.right-side,
+ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+} */
+
+.right-side .search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: 10% auto;
+  width: 60%;
+  background-color: white;
+  gap: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main img {
+  align-self: stretch;
+  object-fit: cover;
+}
+
+.buy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 60px 60px 60px 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info h1 {
+  font-size: 4rem;
+}
+
+.info h2 {
+  font-size: 2rem;
+  padding: 20px 0;
+}
+
+.info p {
+  font-size: 1.3rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  padding: 20px 0;
+}
+
+.buy button {
+  background-color: deeppink;
+  color: white;
+  padding: 10px;
+  border: transparent;
+  width: 60%;
+  font-size: 1rem;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.size,
+.color {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.color {
+  padding-right: 25px;
+}
+
+.colors span:first-child {
+  margin-right: 10px;
+}
+
+.black {
+  background-color: black;
+}
+
+.gradient {
+  background: linear-gradient(
+    248.6deg,
+    rgb(254, 99, 132) 0%,
+    rgb(49, 52, 56) 99.8%
+  );
+}
+
+input {
+  padding: 5px;
+  border: transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Nanum Gothic Coding", monospace;
+  line-height: 1rem;
+}
+
+@media screen and (max-width: 1400px){
+    main {
+        width: 90%;
+    }
+    .buy {
+        padding-right: 10px;
+    }
+    .options {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+  .logo {
+    height: 80px;
+  }
+
+  .left-side,
+  .right-side {
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+  }
+
+  .right-side .search span {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .buy {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 60px;
+  }
+
+  .menu-toggle { /* Added styles for the menu toggle button */
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .menu-wrapper { /* Added styles to hide menu-wrapper initially */
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .logo-toggle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .left-side,
+  .right-side {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  main {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .buy {
+    padding: 10px;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: 40px;
+  }
+}

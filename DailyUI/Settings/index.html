@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Settings</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./arrow.svg" alt="arrow" />
+        <h1><img src="./settings.svg" alt="settings" /> SETTINGS</h1>
+        <img src="./more.svg" alt="more" />
+      </header>
+      <div class="kumamon">
+        <img src="./kumamon.jpg" alt="kumamon" height="70px" />
+      </div>
+      <div class="settings">
+        <div class="enable">
+          <p>Enable voice search</p>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="clock">
+          <p>Clock</p>
+          <div class="radio">
+            <input type="radio" id="12" name="time" value="12" />
+            <label for="12hrs">12hrs</label>
+            <input type="radio" id="24" name="time" value="24" />
+            <label for="24hrs">24hrs</label>
+          </div>
+        </div>
+      </div>
+      <div class="save">
+        <img src="./tick.svg" alt="save" />
+      </div>
+    </div>
+  </body>
+</html>

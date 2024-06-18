@@ -1,0 +1,58 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, rgba(2,0,36, 1) 0, #00b0d4 100%);
+    font-family: "Anek Devanagari", sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    margin-top: 10%;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+}
+
+h1 {
+    border-bottom: 1px solid grey;
+    color: #26355D;
+}
+
+main {
+    padding: 30px;
+}
+
+form {
+    display: grid;
+    width: 50%;
+    margin-left: 25%;
+}
+
+form input {
+    margin-bottom: 20px;  
+    padding: 10px; 
+    border-radius: 8px;
+    border: 1px solid #26355D;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    border: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #26355D;
+    color: white;
+    
+}
+
+a {
+   color: #26355D;
+   display: flex;
+   justify-content: end; 
+}

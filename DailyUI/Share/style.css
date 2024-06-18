@@ -1,0 +1,68 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color:#FFF455;
+    font-family: "Lilita One", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #1679AB;
+    width: 400px;
+    height: 700px;
+    margin-top: 5%;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.topbar {
+    margin: 5px;
+}
+.topbar img {
+    background-color: #102C57;
+    border-radius: 50%;
+}
+
+.text {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.circle {
+    background-color: #102C57;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    margin: 20% auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle img {
+    position: absolute;
+    height: 250px;
+}
+
+.bottom-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15%;
+}
+
+.bottom-buttons img {
+    background-color: #102C57;
+    border-radius: 50%;
+    padding: 20px;
+}
