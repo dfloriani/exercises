@@ -144,10 +144,20 @@ main img {
 
 .color {
   padding-right: 25px;
+  margin-right: 8px;
+}
+
+.size.active {
+  background-color: deeppink;
+  color: white;
+}
+
+.color.active {
+  border: 3px solid #c6cfdf;
 }
 
 .colors span:first-child {
-  margin-right: 10px;
+  margin-right: 13px;
 }
 
 .black {
