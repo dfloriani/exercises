@@ -1,0 +1,144 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f2f9;
+    font-family: "Open Sans", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 500px;
+    height: 600px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(110.2deg, rgb(99, 192, 227) 5.3%, rgb(98, 72, 194) 100.2%);
+}
+
+header img {
+        padding: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 1rem;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info .left, .info .right {
+    background: linear-gradient(110.2deg, rgb(99, 192, 227) 5.3%, rgb(98, 72, 194) 100.2%);
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+.text {
+    font-size: 0.8rem;
+    color: #393875;
+    font-weight: 500;
+}
+
+.number {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.plus {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.plus img {
+    position: absolute;
+    top: -30px;
+    background-color: deeppink;
+    padding: 10px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+main {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15% 0;
+    gap: 20px;
+    box-shadow: 0 4px 100px rgba(102, 162, 220, 0.4);
+}
+
+.hours, .minutes, .seconds {
+    font-size: 0.8rem;
+    color: rgb(102, 163, 220, 0.4);
+    font-weight: 600;
+}
+
+.time {
+    font-size: 5rem;
+    font-weight: 300;
+    color: #66a2dc;
+}
+
+.hours p {
+    color: rgba(102, 162, 220, 0.4);
+   }
+
+.start {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.start button {
+    position: absolute;
+    z-index: 1;
+    color: #66a2dc;
+    font-weight: 600;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(102, 162, 220, 0.1);
+    border-radius: 8px;
+    border: transparent;
+    bottom: -20px;
+    padding: 15px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    color:rgba(102, 162, 220, 0.4);
+    font-size: 0.8rem;
+    box-shadow: 0 4px 100px rgba(102, 162, 220, 0.4);
+}
+
+footer .left, footer .right {
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0px 8px rgba(102, 162, 220, 0.4);
+}
