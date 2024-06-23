@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop Up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="topbar">
+        <span class="bi bi-x" id="close"></span>
+      </div>
+      <div class="text">
+        <p class="main">DO YOU LIKE OUR APP?</p>
+        <p class="sub">Give us a quick rating so we know if you like it.</p>
+      </div>
+      <div class="stars">
+        <span
+          onclick="rating(1)"
+          onmouseover="hoverRating(1)"
+          onmouseout="hoverRemove()"
+          class="star"
+          >★
+        </span>
+        <span
+          onclick="rating(2)"
+          onmouseover="hoverRating(2)"
+          onmouseout="hoverRemove()"
+          class="star"
+          >★
+        </span>
+        <span
+          onclick="rating(3)"
+          onmouseover="hoverRating(3)"
+          onmouseout="hoverRemove()"
+          class="star"
+          >★
+        </span>
+        <span
+          onclick="rating(4)"
+          onmouseover="hoverRating(4)"
+          onmouseout="hoverRemove()"
+          class="star"
+          >★
+        </span>
+        <span
+          onclick="rating(5)"
+          onmouseover="hoverRating(5)"
+          onmouseout="hoverRemove()"
+          class="star"
+          >★
+        </span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+*, ::before, :after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(113.3deg, rgb(134, 209, 228) -1.8%, rgb(60, 80, 115) 86.4%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 800px;
+    height: auto;
+    background-color: #f2f5f6;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    display:flex;
+    justify-content: center;
+    background-color: black;
+    color: #848e93;
+    overflow: hidden;
+    font-size: 0.7rem;
+    width: 800px;
+    gap: 2px;
+}
+
+.menu-item {
+    background-color: #2c353b;
+    padding: 5% 5.6%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.active {
+    background-color: #222c30;
+    color: white;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #cccccc;
+}
+
+hr {
+    border: 0;
+    background-color: #cccccc;
+    height: 1px;
+}
+
+.today, .week, .month {
+    padding: 2% 5%;
+}
+
+.selected {
+    color: black;
+    border-bottom: 2px solid #4e91cb;
+}
+
+#myChart {
+    background-color: white;
+}
+
+.chart {
+    display: flex;
+    padding: 2%;
+    gap: 2%;
+}
+
+.locations {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    font-size: 0.8rem;
+}
+
+.title {
+    padding-bottom: 10%;
+}
+
+.country {
+    padding-bottom: 10px;
+}
+
+.bar {
+    background-color: #dee8f2;
+    border: transparent;
+    border-radius: 8px;
+    width: 250px;
+    margin-bottom: 15%;
+}
+
+.barfill {
+    background-color:#4e91cb;
+    border-radius: 8px;
+}
+
+.arcs {
+    padding: 2% 0;
+    position: relative;
+    display: flex;
+    gap: 10%;
+}
+
+.arc {
+    /* Border size and color */
+    border: 2px solid #68cb23;
+    /* Creates a circle */
+    border-radius: 50%;
+    /* Circle size */
+    height: 100px;
+    width: 100px;
+    /* Use transparent borders to define opening (more transparent = larger opening) */
+    border-top-color: transparent;
+    border-left-color: transparent;
+    /* Use transform to rotate to adjust where opening appears */
+    transform: rotate(300deg);
+  }
+
+  .arc2 {
+    /* Border size and color */
+    border: 2px solid red;
+    /* Creates a circle */
+    border-radius: 50%;
+    /* Circle size */
+    height: 100px;
+    width: 100px;
+    /* Use transparent borders to define opening (more transparent = larger opening) */
+    border-top-color: transparent;
+    border-left-color: transparent;
+    /* Use transform to rotate to adjust where opening appears */
+    transform: rotate(80deg);
+  }
+
+  .arc3 {
+    /* Border size and color */
+    border: 2px solid #4e91cb;
+    /* Creates a circle */
+    border-radius: 50%;
+    /* Circle size */
+    height: 100px;
+    width: 100px;
+    /* Use transparent borders to define opening (more transparent = larger opening) */
+    /* border-top-color: transparent; */
+    border-left-color: transparent;
+    /* Use transform to rotate to adjust where opening appears */
+    transform: rotate(-180deg);
+  }
+
+  .legend {
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 53px;
+    left: 30px;
+    text-align: center;
+  }
+
+  .middle {
+    left: 203px;
+  }
+
+  .right {
+    left: 378px;
+  }

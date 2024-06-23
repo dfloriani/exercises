@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <title>Chart</title>
+  <body>
+    <div class="container">
+      <div class="topbar">
+        <div class="menu-item">
+          <span class="bi bi-bell"></span>
+          <p>Activity</p>
+        </div>
+        <div class="menu-item active">
+          <span class="bi bi-graph-up-arrow"></span>
+          <p>Statistic</p>
+        </div>
+        <div class="menu-item">
+          <span class="bi bi-person-fill"></span>
+          <p>People</p>
+        </div>
+        <div class="menu-item">
+          <span class="bi bi-envelope"></span>
+          <p>Messages</p>
+        </div>
+        <div class="menu-item">
+          <span class="bi bi-calendar"></span>
+          <p>Calendar</p>
+        </div>
+        <div class="menu-item">
+          <span class="bi bi-files"></span>
+          <p>Document</p>
+        </div>
+      </div>
+      <main>
+        <div class="items">
+          <div class="today">
+            <p>TODAY</p>
+          </div>
+          <div class="week">
+            <p>WEEK</p>
+          </div>
+          <div class="month selected">
+            <p>MONTH</p>
+          </div>       
+        </div>
+        <hr />
+      </main>
+      <div class="chart">
+        <canvas id="myChart" style="width: 100%; max-width: 500px"></canvas>
+        <div class="locations">
+          <p class="title">LOCATIONS</p>
+          <p class="country">United States</p>
+          <div class="bar">
+            <div class="barfill" style="height:7px;width:25%"></div>
+          </div>
+          <p class="country">United Kingdom</p>
+          <div class="bar">
+            <div class="barfill" style="height:7px;width:50%"></div>
+          </div>
+          <p class="country">France</p>
+          <div class="bar">
+            <div class="barfill" style="height:7px;width:70%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="arcs">
+        <div class="arc"></div>
+        <div class="legend">
+          <p>325K</p>
+          <p>pageviews</p>
+        </div>
+        <div class="arc2"></div>
+        <div class="legend middle">
+          <p>56%</p>
+          <p>Returning</p>
+        </div>
+        <div class="arc3"></div>
+        <div class="legend right">
+          <p>1,254</p>
+          <p>New visitors</p>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
