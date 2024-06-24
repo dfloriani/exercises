@@ -16,7 +16,9 @@ body {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
+    min-width: 300px; /* Added minimum width */
     height: auto;
     background-color: #f2f5f6;
     display: flex;
@@ -30,7 +32,9 @@ body {
     color: #848e93;
     overflow: hidden;
     font-size: 0.7rem;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
+    min-width: 300px; /* Added minimum width */
     gap: 2px;
 }
 
@@ -41,6 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    flex: 1 1 30%; /* Adjusted flex basis */
 }
 
 .active {
@@ -72,6 +77,9 @@ hr {
 
 #myChart {
     background-color: white;
+    width: 500px; 
+    max-width: 500px; 
+    height: 250px;
 }
 
 .chart {
@@ -174,4 +182,151 @@ hr {
 
   .right {
     left: 378px;
+  }
+
+  @media screen and (max-width: 827px) {
+    .container {
+        width: 600px;
+    }
+
+    .chart {
+        overflow: hidden;
+    }
+
+    #myChart {
+        width: 60% !important;
+    }
+
+      .bar {
+        width: 220px;
+      }
+
+      .legend {
+        bottom: 50px;
+      }
+
+      .middle {
+        left: 187px;
+      }
+
+      .right {
+        left: 338px;
+      }
+
+      .menu-item {
+        padding: 5% 2.6%;
+      }
+
+  }
+
+  @media screen and (max-width: 650px) {
+    .container {
+        width: 500px;
+    }
+
+    .middle {
+        left: 175px;
+      }
+    
+      .right {
+        left: 320px;
+      }
+
+      .bar {
+        width: 170px;
+      }
+
+  }
+
+  @media screen and (max-width: 500px) {
+    .container {
+        width: 400px;
+    }
+
+    .legend {
+      bottom: 47px;
+    }
+
+    .middle {
+        left: 162px;
+      }
+    
+      .right {
+        left: 300px;
+      }
+
+      .bar {
+        width: 140px;
+      }
+
+      .menu-item {
+        padding: 5% 2.6%;
+      }
+
+      .locations {
+        gap: 0.5%;
+      }
+
+  }
+
+  @media screen and (max-width: 410px) {
+    .container {
+        width: 300px;
+    }
+
+    .topbar {
+      flex-wrap: wrap;
+    }
+
+    .chart {
+      flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    #myChart {
+      width: 100% !important;
+    }
+
+      .bar {
+        width: 280px;
+        margin-bottom: 10%;
+      }
+
+      .menu-item {
+        padding: 5% 2.6%;
+      }
+
+      .locations {
+        gap: 0.5%;
+      }
+
+      .title {
+        padding-top: 5%;
+
+      }
+
+      .arc, .arc2, .arc3 {
+        height: 70px;
+        width: 70px;
+      }
+
+      .arcs {
+        justify-content: center;
+        margin-bottom: 5%;
+      }
+
+      .legend {
+        bottom: 29px;
+        left: 28px;
+        font-size: 0.6rem;
+      }
+
+      .middle {
+        left: 128px;
+      }
+    
+      .right {
+        left: 224px;
+      }
+
   }
